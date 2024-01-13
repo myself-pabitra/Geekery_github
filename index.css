@@ -69,11 +69,11 @@ body {
 .sub_heading::after {
     content: '';
     display: block;
-    width: 50%;
+    width: 40%;
     height: 1px;
     background-color: #00ff67;
     position: relative;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -109,7 +109,7 @@ body {
     font-size: 24px;
     padding: 6px 12px;
     color: #01ff4d;
-    margin-left: 4rem;
+
 }
 
 .card_title {
@@ -242,7 +242,15 @@ body {
 
     .sub_heading::after {
 
-        width: 75%;
+        content: '';
+        display: block;
+        width: 80%;
+        height: 1px;
+        background-color: #00ff67;
+        position: relative;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
 
     }
 
