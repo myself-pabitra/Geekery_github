@@ -1,0 +1,235 @@
+body {
+    /* Font Family */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+body ::selection {
+    color: #000000;
+    background: rgb(0, 255, 103);
+}
+
+body {
+    /* Body Properties */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.nav_align {
+    margin-left: 7rem;
+}
+
+.nav_align img {
+    height: 75px;
+    width: 250px;
+}
+
+.nav_item_align {
+    margin-right: 7rem;
+}
+
+.nav_links {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav_links a:hover {
+    color: rgb(0, 255, 103) !important;
+}
+
+.services_area .heading {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.47px;
+    line-height: 47px;
+    text-decoration: none solid rgb(240, 247, 243);
+    text-align: center;
+    word-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.services_area .sub_heading {
+    font-size: 20px;
+    border-bottom: 1px solid rgba(237, 239, 242, 1);
+    font-weight: 600;
+    letter-spacing: 0.47px;
+    line-height: 47px;
+    text-decoration: none solid rgb(240, 247, 243);
+    text-align: center;
+    word-spacing: 0px;
+    text-transform: uppercase;
+}
+
+.video_cards_row1,
+.video_cards_row2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.coniter_photoshoot {
+    width: fit-content;
+}
+
+.container_video {
+    width: fit-content;
+}
+
+/* services card styling start*/
+.card {
+    position: relative;
+    width: 250px;
+    height: 215px;
+    color: #2e2d31;
+    background: #131313;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.temporary_text {
+    font-weight: bold;
+    font-size: 24px;
+    padding: 6px 12px;
+    color: #01ff4d;
+    margin-left: 4rem;
+}
+
+.card_title {
+    font-weight: bold;
+}
+
+.card_content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 20px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(150px);
+    transition: transform .25s;
+}
+
+.card_content::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+}
+
+.card_title {
+    color: #131313;
+    line-height: 15px;
+}
+
+.card_subtitle {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.card_description {
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.card:hover .card_content {
+    transform: translateY(0);
+}
+
+.card:hover .card_description {
+    opacity: 1;
+    transition-delay: .25s;
+}
+
+
+/* services card styling ends*/
+
+.footer_links a {
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 24.75px;
+    font-weight: 600;
+    color: rgba(163, 157, 240, 1) !important;
+    text-decoration: none;
+}
+
+.footer_links a:hover {
+    color: rgba(237, 239, 242, 1) !important;
+}
+
+.text_white {
+    color: white !important;
+}
+
+/* lets talk button  */
+.talk_button {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+    text-decoration: none;
+    text-align: center;
+    height: 74.8px;
+    width: 231.5px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    padding: 25px 50px 25px 50px;
+    background: transparent;
+    cursor: pointer;
+    color: #ffffff;
+    transform: none;
+    transition: all 0.3s ease 0s;
+    /* outline: none; */
+    outline: 2px solid #ffffff;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.talk_button:hover {
+    background-color: #00ff67;
+    color: #000000;
+    outline: none;
+}
+
+/* Responsive Css */
+
+@media screen and (max-width: 768px) {
+    .nav_align {
+        /* margin-left: 8.5rem; */
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .container , .container-fluid{
+        --bs-gutter-x: 0rem;
+    }
+    .services_area .heading {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .service_cards {
+        margin-bottom: 2rem;
+    }
+
+    .video_cards_row1,
+    .video_cards_row2 {
+        margin: 3rem !important;
+    }
+
+}
