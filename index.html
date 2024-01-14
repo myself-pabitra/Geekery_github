@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./static/css/contact.css" />
   <title>Geekery | Video Production</title>
 </head>
 
@@ -18,7 +19,7 @@
   <div class="main-container">
 
     <!-- Navbar stsrts Here -->
-    <nav class="navbar navbar-expand-lg bg-transparent">
+    <nav class="navbar navbar-expand-lg bg-transparent navbar_container navbar_fixed">
       <div class="container-fluid">
         <a class="navbar-brand nav_align text_white" href="#"><img src="./static/logos/1500X500.png" alt="brand_logo"
             srcset="" /></a>
@@ -31,7 +32,7 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
             <li class="nav-item nav_links">
-              <a class="nav-link active me-3 text_white" aria-current="page" href="#">Home</a>
+              <a class="nav-link active me-3 text_white" aria-current="page" href="#home">Home</a>
             </li>
 
             <li class="nav-item nav_links">
@@ -43,7 +44,7 @@
             </li>
 
             <li class="nav-item nav_links">
-              <a class="nav-link active me-3 text_white" href="#">Contact Us</a>
+              <a class="nav-link active me-3 text_white" href="#contact">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -51,11 +52,28 @@
     </nav>
     <!-- Navbar ends Here -->
 
+    <!-- Home section starts here -->
+    <div class="video-container" id="home">
+      <video autoplay muted loop id="video-background">
+          <source src="./static/videos/G V13.mp4" type="video/mp4">
 
+      </video>
+    <div class="text-overlay">
+    <div class="text-center">
+        <h1>Brogrammers</h1>
+    </div>
+
+    <p>Your Imagination, our implementation</p>
+  </div>
+</div>
+<!-- Home section ends here -->
+
+
+<!-- Services section starts here -->
     <section class="services_area" id="Services">
       <div class="container  mt-3 text-center">
         <div class="row">
-          <div class="heading">We do it all. And do it exceptionally well</div>
+          <div class="heading mt-5">We do it all. And do it exceptionally well</div>
           <div class="sub_heading mt-3">
             <p> VIDEO PRODUCTION </p>
           </div>
@@ -67,8 +85,10 @@
                   <img src="./static/icons/webinar.png" width="90" alt="" srcset="">
                   </svg>
                 </div>
-                <div class="card_content">
-                  <span class="card_title">Corporate video</span>
+                <div class="card_content ">
+              
+                  <span class="card_title ">Corporate video</span>
+                  <!-- <img src="./static/images/tab-bg.png" alt="" srcset=""> -->
                   <p class="card_description">Lorem ipsum dolor, sit amet expedita exercitationem recusandae aut dolor
                     tempora aperiam itaque possimus at, cupiditate earum, quae repudiandae aspernatur?</p>
                 </div>
@@ -304,8 +324,77 @@
         </div>
       </div>
     </section>
+<!-- Services section ends here -->
 
 
+     <!-- Contact us section starts here -->
+     <div class="contact-us" id="contact">
+      <div class="row">
+      <div class="container contact_heading_container">
+
+          <div class="col-md-12 col-12">
+            <!-- <h1 class="contact_heading sub_heading">
+             
+            </h1> -->
+            <div class="contact_heading sub_heading_large">
+              LET'S TALK ABOUT YOUR VIDEO PROJECT!
+            </div>
+          </div>
+        </div>
+
+      <div class="container contact_sub_heading_container">
+
+     <div class="col-md-12 col-12">
+        <h4 class="contact_sub_heading">
+          Looking to work with us instead, send us an email to connect@geekeryvideoproductions.com
+        </h4>
+     </div>
+     </div>
+ 
+
+      </div>
+      
+      <div class="container contact_form-container">
+      <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5">
+          <div class="contact-img-container mt-5">
+            <img src="./static/images/cu-f.png" alt="">
+          </div>
+        </div>
+        <div class="col-md-1"></div>
+    
+        <div class="col-md-5">
+          <div class="contact_form m-4">
+            <form>
+              <div class="form-row mt-5">
+                <div class="form-group col-md-8 col-12 mb-4">
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-8 col-12 mb-4">
+                  <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+                </div>
+                <div class="form-group col-md-8 col-12 mb-4">
+                  <input type="email" class="form-control" id="inputPassword4" placeholder="Email Id">
+                </div>
+    
+              <div class="form-group col-md-8 mb-4">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your message here"></textarea>
+              </div>
+              <div class="mt-4 text-center col-md-8">
+                <button class="talk_button">Lets Talk!</button>
+              </div>
+            </div>
+    
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+
+    </div>
+    <!-- Contact us section ends here -->
 
 
 
@@ -328,7 +417,7 @@
       <div class="col mb-3 d-flex justify-content-center align-items-center">
         <ul class="nav flex-column">
           <li class="nav-item mb-2 footer_links">
-            <a href="#" class="nav-link p-0">Home</a>
+            <a href="#home" class="nav-link p-0">Home</a>
           </li>
           <li class="nav-item mb-2 footer_links">
             <a href="#Services" class="nav-link p-0">Our Services</a>
@@ -340,7 +429,7 @@
             <a href="#" class="nav-link p-0">FAQs</a>
           </li>
           <li class="nav-item mb-2 footer_links">
-            <a href="#" class="nav-link p-0">Contact us</a>
+            <a href="#contact" class="nav-link p-0">Contact us</a>
           </li>
         </ul>
       </div>

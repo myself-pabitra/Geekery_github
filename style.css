@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     /* Font Family */
     font-family: "Montserrat", sans-serif;
@@ -5,6 +10,7 @@ body {
     font-weight: 500;
     font-style: normal;
     color: white;
+    overflow-x: hidden;
 
 }
 
@@ -74,6 +80,17 @@ body {
     background-color: #00ff67;
     position: relative;
     bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub_heading_large::after {
+    content: '';
+    display: block;
+    width: 75%;
+    height: 1px;
+    background-color: #00ff67;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -232,8 +249,9 @@ body {
     }
 
     .services_area .heading {
-        font-size: 20px;
+        font-size: 26px;
         line-height: 35px;
+        font-weight: bold;
     }
 
     .sub_heading::after {
@@ -254,7 +272,8 @@ body {
         height: 75px;
         width: 245px;
     }
-        .nav_links {
+
+    .nav_links {
         text-align: center !important;
     }
 
@@ -282,3 +301,71 @@ body {
 
     }
 }
+
+
+/*  */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* This property makes the video cover the entire container while maintaining its aspect ratio */
+    z-index: 1;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    /* Align to the right side of the screen */
+    transform: translateY(-50%);
+    text-align: center;
+    /* Align text to the right */
+    color: white;
+    z-index: 1;
+    padding: 20px;
+    /* Add padding for better readability */
+}
+
+.navbar_container {
+    z-index: 1000;
+    position: relative;
+}
+
+.navbar_fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: slideInDown 1s ease;
+}
+
+.fade-out {
+    display: none;
+}
+
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+/*  */
+
+
+
+
+
