@@ -80,8 +80,6 @@ body {
 
 
 
-
-
 /* services card styling start*/
 .card {
     position: relative;
@@ -216,6 +214,8 @@ body {
     color: #000000;
     outline: none;
 }
+
+
 
 /* Responsive Css */
 
