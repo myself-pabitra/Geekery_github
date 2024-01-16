@@ -16,9 +16,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
-      <!-- fontawesome script -->
+
+  <!-- fontawesome script -->
   <script src="https://kit.fontawesome.com/5816232c5b.js" crossorigin="anonymous"></script>
   <!-- fontawesome script -->
+
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="./static/css/contact.css" />
   <title>Geekery | Video Production</title>
@@ -50,7 +52,7 @@
             </li>
 
             <li class="nav-item nav_links">
-              <a class="nav-link active me-3 text_white" href="#">About Us</a>
+              <a class="nav-link active me-3 text_white" href="#about_us">About Us</a>
             </li>
 
             <li class="nav-item nav_links">
@@ -64,9 +66,60 @@
 
     <!-- Home section starts here -->
     <div class="video-container" id="home">
+
+
+      <!-- showcase section starts here  -->
+
+      <section class="showcase_item">
+        <div id="slider" class="carousel slide showcase text-center" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+              <h5>Welcome to Geekery Video Production</h5>
+              <div class="carousel-text-container">
+
+                <p class="text_small ">We are a Media agency armed with service and brand experts and inspired enough to
+                  provide the best growth solutions to impact the world </p>
+
+              </div>
+            </div>
+            <div class="carousel-item active text-center">
+              <h5>Tailored Especially For You</h5>
+              <div class="carousel-text-container">
+
+                <p class="text_small ">We aim to be a giant service provider to empower consumers while competing
+                  efficiently
+                  with changing public attitudes and new contenders in the field</p>
+
+              </div>
+            </div>
+            <div class="carousel-item active text-center">
+              <h5>Enjoy Your Project</h5>
+              <div class="carousel-text-container">
+
+                <p class="text_small ">You can check, enjoy and completely track the progress of your Project
+                  conveniently on
+                  a single page. Your peace of mind is as important as your Project</p>
+
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- showcase section ends here  -->
+
+
       <video autoplay muted loop id="video-background">
         <source src="./static/videos/G V13.mp4" type="video/mp4">
-
       </video>
     </div>
     <!-- Home section ends here -->
@@ -329,6 +382,58 @@
     </section>
     <!-- Services section ends here -->
 
+    <!-- About us section starts here -->
+    <section class="about_us mt-5" id="about_us">
+      <div class="container about_us_container">
+        <div class="text-center">
+          <div class="sub_heading_about">
+            <h2>About us!</h2>
+          </div>
+          <div class="about_para1 mt-5">
+            Creativity is our hallmark but producing a super-creative, super-intriguing video takes a lot of
+            collaborative effort and is a complete team play
+          </div>
+          <div class="about_para1 mt-3">
+            So we, at You Media believe to have a symbiotic relationship with our clients so they know
+            exactly how their project is being treated and at what stage it is at all times with our Live
+            Dashboards
+          </div>
+          <div class="row mt-5">
+            <div class="col-md-4">
+              <div class="callout_container">
+                <img src="./static/images/callout.png" alt="" width="250px">
+                <p class="callout-text">Why do we do this?</p>
+
+              </div>
+            </div>
+            <div class="col-md-6">
+              <p class="callout_para mt-5">If we encounter a question never asked before, the answer needs to be unique as well. So it is
+                not enough that we build designs that function, are usable, and understandable, but also bring
+                joy, excitement, pleasure, fun and yes, beauty to people's lives.
+                Essentially, we are reinventing how good design is coupled with a delightful client experience, at
+                scale</p>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-6">
+            <p class="callout_para mt-5">The idea here is not to just provide standard video marketing plans to our clients. We study our
+              clients, their business type, and their target audience and accordingly suggest the most
+              appropriate video marketing campaign to accelerate the business. Every pitch/offering from You
+              Media is based on detailed research and fully personalised to our client's needs</p>
+          </div>
+          <div class="col-md-4">
+            <div class="callout_container">
+              <img src="./static/images/callout.png" alt="" width="250px">
+              <p class="callout-text">How do we do this?</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- About us section ends here -->
 
     <!-- Contact us section starts here -->
     <div class="contact-us" id="contact">
@@ -336,9 +441,6 @@
         <div class="container contact_heading_container">
 
           <div class="col-md-12 col-12">
-            <!-- <h1 class="contact_heading sub_heading">
-             
-            </h1> -->
             <div class="contact_heading sub_heading_large">
               LET'S TALK ABOUT YOUR VIDEO PROJECT!
             </div>
@@ -407,7 +509,7 @@
     <div class="footer_">
       <div class="container">
         <footer class="row row-cols-1 row-cols-sm-1 row-cols-md-3 py-5 my-5">
-          
+
           <div class="col mb-3 d-flex align-items-center justify-content-center justify-content-sm-start flex-column">
             <a href="/" class=" mb-3 link-body-emphasis text-decoration-none">
               <!-- Brand Logo -->
@@ -478,7 +580,7 @@
                 <a href="#" class="nav-link p-0">Privacy Policy</a>
               </li>
               <li class="nav-item mb-2 footer_links">
-                <a href="#" class="nav-link p-0">About</a>
+                <a href="#about_us" class="nav-link p-0">About</a>
               </li>
             </ul>
           </div>
@@ -495,7 +597,12 @@
 
   </div>
   <script src="static/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+
+
   <script src="index.js"></script>
+
 </body>
 
 </html>

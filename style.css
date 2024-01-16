@@ -94,6 +94,16 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+.sub_heading_about::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 1px;
+    background-color: #00ff67;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
@@ -388,7 +398,7 @@ ul.social-network li {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 #video-background {
@@ -446,6 +456,132 @@ ul.social-network li {
 /*  */
 
 
+/* .showcase{
+    position: absolute;
+    z-index: 1000;
+    top: 300px;
+    width: 80vw;
+    left: 6rem;
+} */
+
+.showcase {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1000;
+    padding: 20px;
+    max-width: 600px;
+  }
+
+.carousel-text-container{
+    /* max-width: 500px; */
+    margin: 0 6rem;
+}
+.carousel-item h5{
+    font-weight: bold;
+    padding: 0;
+    background: rgb(0, 255, 103);
+    display: inline-block;
+}
+@media (max-width: 768px){
+    .carousel-text-container{
+        /* max-width: 500px; */
+        margin: 0 3rem;
+    }
+    .showcase{
+        width: 400px;
+    }
+    .carousel-item h5{
+        background: none;
+    }
+}
 
 
 
+
+/* callout section css  */
+.about_para1{
+    font-weight: 600;
+}
+
+.callout_para{
+    font-weight: 700;
+}
+.callout_container {
+    position: relative;
+    text-align: center;
+  }
+  
+  .callout-text {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Set the text color */
+    font-size: 28px;
+    font-weight: bold; /* Adjust the font size as needed */
+    /* Add any additional styling for the text */
+  }
+
+  .callout_container img {
+    animation: danglingAnimation 2s infinite;
+    transform-origin: bottom center;
+  }
+  
+  @keyframes danglingAnimation {
+    0% {
+      transform: rotate(-5deg);
+    }
+    50% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(-5deg);
+    }
+  }
+  
+/* callout section css  */
+
+
+
+/* Add the following CSS to your stylesheet or within a style tag in your HTML */
+
+
+.about_para1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Space for the underline */
+  }
+  
+  .about_para1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px; /* Thickness of the underline */
+    background: linear-gradient(90deg, #3498db, #e74c3c); /* Gradient colors for the underline */
+    transform-origin: 0 100%;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+    animation: wavy 2s infinite; /* Add wavy animation */
+  }
+  
+  @keyframes wavy {
+    0%, 100% {
+      transform: scaleX(0.2) translateZ(0);
+    }
+    25% {
+      transform: scaleX(0.5) translateZ(0);
+    }
+    50% {
+      transform: scaleX(1) translateZ(0);
+    }
+    75% {
+      transform: scaleX(0.5) translateZ(0);
+    }
+  }
+  
