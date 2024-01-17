@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 
@@ -84,6 +84,7 @@ body {
     transform: translateX(-50%);
 }
 
+
 .sub_heading_large::after {
     content: '';
     display: block;
@@ -94,10 +95,11 @@ body {
     left: 50%;
     transform: translateX(-50%);
 }
+
 .sub_heading_about::after {
     content: '';
     display: block;
-    width: 50%;
+    width: 40%;
     height: 1px;
     background-color: #00ff67;
     position: relative;
@@ -105,7 +107,61 @@ body {
     transform: translateX(-50%);
 }
 
+.home_sub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    background-color: transparent;
+    background-image: linear-gradient(360deg, #723FCD 0%, #00FF67 100%);
+  }
 
+  .text_container{
+    width: 56rem;
+  }
+  
+  .sub_home_text {
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 20px; 
+  }
+  
+  .talk_button_home {
+    margin-top: 20px; 
+  }
+  
+
+.talk_button_home {
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+    text-decoration: none;
+    text-align: center;
+    height: 60.8px;
+    width: 160.5px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    /* padding: 25px 50px 25px 50px; */
+    background: transparent;
+    cursor: pointer;
+    color: #ffffff;
+    transform: none;
+    transition: all 0.3s ease 0s;
+    /* outline: none; */
+    outline: 2px solid #ffffff;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.talk_button_home:hover {
+    background-color: #00ff67;
+    color: #000000;
+    outline: none;
+}
 
 /* services card styling start*/
 .card {
@@ -143,6 +199,7 @@ body {
     transform: translateY(150px);
     transition: transform .25s;
 }
+
 
 .card_content::before {
     content: '';
@@ -476,16 +533,24 @@ ul.social-network li {
     max-width: 600px;
   }
 
+
+  .showcase_head_text h5{
+    padding: 3px 8px;
+    background: rgb(14, 176, 11);
+    margin-bottom: 8px;
+    font-weight: bold;
+    display: inline-block;
+  }
+
 .carousel-text-container{
     /* max-width: 500px; */
     margin: 0 6rem;
 }
-.carousel-item h5{
+/* .carousel-item h5{
     font-weight: bold;
     padding: 0;
-    background: rgb(0, 255, 103);
     display: inline-block;
-}
+} */
 @media (max-width: 768px){
     .carousel-text-container{
         /* max-width: 500px; */
@@ -497,18 +562,29 @@ ul.social-network li {
     .carousel-item h5{
         background: none;
     }
+
 }
 
+@media (max-width:350px) {
+    .footer_links a{
+        font-size: 11px;
+    }
+}
 
-
+@media (min-width: 600px) and (max-width: 800px) {
+    ul.social-network li {
+        margin: 0 2px;
+    }
+}
 
 /* callout section css  */
 .about_para1{
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .callout_para{
     font-weight: 700;
+    line-height: 25px;
 }
 .callout_container {
     position: relative;
@@ -519,69 +595,405 @@ ul.social-network li {
     position: absolute;
     top: 39%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
     color: white; /* Set the text color */
     font-size: 28px;
     font-weight: bold; /* Adjust the font size as needed */
     /* Add any additional styling for the text */
-  }
-
-  .callout_container img {
-    animation: danglingAnimation 2s infinite;
-    transform-origin: bottom center;
-  }
-  
-  @keyframes danglingAnimation {
-    0% {
-      transform: rotate(-5deg);
-    }
-    50% {
-      transform: rotate(5deg);
-    }
-    100% {
-      transform: rotate(-5deg);
-    }
   }
   
 /* callout section css  */
 
 
 
-/* Add the following CSS to your stylesheet or within a style tag in your HTML */
+@keyframes floatAnimation {
+    0% { transform: translate(-50%, -60%); }
+    50% { transform: translate(-50%, -40%); }
+    100% { transform: translate(-50%, -60%);}   
+  }
+
+  .callout_container .callout-text {
+    animation: floatAnimation 3s infinite;
+  }
+
+  .callout_container img{
+    animation: floatAnimationImg 3s infinite;
+
+  }
+
+  @keyframes floatAnimationImg {
+    0% { transform: translateY (0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(0);}   
+  }
 
 
-.about_para1 {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 5px; /* Space for the underline */
+.contact-img-container:hover{
+
+    animation: floatContact 2s infinite;
+
+  }
+
+  @keyframes floatContact {
+    0% { transform: translateY (0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(-20px);}   
+  }
+
+
+  .contact-img-container{
+    animation: floatContact2 2s;
+
   }
   
-  .about_para1::after {
-    content: '';
+  @keyframes floatContact2 {
+    0% { transform: translateY (0); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(20px);}   
+  }
+
+
+  /* ***************************************************************************** */
+
+/* Individual card styling section  */
+
+/*  card 1*/
+
+.card_content1 {
     position: absolute;
     left: 0;
     bottom: 0;
+    /* edit the width to fit card */
     width: 100%;
-    height: 2px; /* Thickness of the underline */
-    background: linear-gradient(90deg, #3498db, #e74c3c); /* Gradient colors for the underline */
-    transform-origin: 0 100%;
-    transform: scaleX(0);
-    transition: transform 0.3s ease-in-out;
-    animation: wavy 2s infinite; /* Add wavy animation */
-  }
-  
-  @keyframes wavy {
-    0%, 100% {
-      transform: scaleX(0.2) translateZ(0);
+    padding: 12px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(25px);
+    transition: transform .25s;
+}
+
+.card_content1::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content1 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content1 {
+        transform: translateY(34px);
+        padding: 13px;
+
     }
-    25% {
-      transform: scaleX(0.5) translateZ(0);
+}
+/*  card 2*/
+
+.card_content2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 11px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(41px);
+    transition: transform .25s;
+}
+
+.card_content2::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content2 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content2 {
+        transform: translateY(40px);
+        padding: 13px;
+
     }
-    50% {
-      transform: scaleX(1) translateZ(0);
+}
+/*  card 3*/
+
+.card_content3 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 11px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(41px);
+    transition: transform .25s;
+}
+
+.card_content3::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content3 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content3 {
+        transform: translateY(40px);
+        padding: 13px;
+
     }
-    75% {
-      transform: scaleX(0.5) translateZ(0);
+}
+
+/*  card 4*/
+
+.card_content4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 11px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(20px);
+    transition: transform .25s;
+}
+
+.card_content4::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content4 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content4 {
+        padding: 13px;
+
     }
-  }
-  
+}
+/*  card 5*/
+
+.card_content5 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 11px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(12px);
+    transition: transform .25s;
+}
+
+.card_content5::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content5 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content5 {
+        padding: 13px;
+
+    }
+}
+/*  card 6*/
+
+.card_content6 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 11px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(18px);
+    transition: transform .25s;
+}
+
+.card_content6::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content6 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content6 {
+        padding: 13px;
+
+    }
+}
+/*  card 7*/
+
+.card_content7 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 11px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(35px);
+    transition: transform .25s;
+}
+
+.card_content7::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content7 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content7 {
+    transform: translateY(48px);
+        padding: 13px;
+
+    }
+}
+/*  card 8*/
+
+.card_content8 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* edit the width to fit card */
+    width: 100%;
+    padding: 11px;
+    background: #f2f2f2;
+    border-top-left-radius: 20px;
+    /* edit here to change the height of the content box */
+    transform: translateY(50px);
+    transition: transform .25s;
+}
+
+.card_content8::before {
+    content: '';
+    position: absolute;
+    top: -47px;
+    right: -45px;
+    width: 100px;
+    height: 100px;
+    transform: rotate(-175deg);
+    border-radius: 50%;
+    box-shadow: inset 48px 48px #f2f2f2;
+    z-index: -1000;
+}
+
+.card:hover .card_content8 {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px)  {
+    .col-md-3 .card_content8 {
+    transform: translateY(79px);
+        padding: 13px;
+
+    }
+}
+
+/* Individual card styling section  */
+
+/* sub home scction media queries  */
+@media (max-width: 768px) {
+
+    .text_container{
+        width: 56rem;
+      }
+      
+      .sub_home_text {
+        font-weight: 600;
+        font-size: 19px;
+        /* margin-top: 20px;  */
+      }
+      
+      .talk_button_home {
+        margin-top: 15px; 
+      }
+    
+}
+/* sub home scction media queries  */
