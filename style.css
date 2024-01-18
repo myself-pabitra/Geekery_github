@@ -166,96 +166,6 @@ body {
 }
 
 
-
-/* services card styling start*/
-.card {
-  position: relative;
-  width: 250px;
-  height: 215px;
-  color: #2e2d31;
-  background: #000000;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-
-.temporary_text {
-  font-weight: bold;
-  font-size: 24px;
-  padding: 12px 12px;
-  color: #01ff4d;
-}
-
-.card_title {
-  font-weight: bold;
-}
-
-.card_content {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 20px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  /* transform: translateY(150px); */
-  transition: transform 0.25s;
-}
-
-.card_content::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card_title {
-  color: #1aff88;
-  line-height: 15px;
-  font-size: 13px;
-  font-family: sifonn;
-}
-
-.card_subtitle {
-  display: block;
-  font-size: 12px;
-  margin-bottom: 10px;
-}
-
-.card_description {
-  font-size: 14px;
-  /* opacity: 0;
-    transition: opacity .5s; */
-  color: #1aff88;
-  font-family: Sifonn;
-}
-
-.card:hover .card_content {
-  transform: translateY(0);
-}
-
-.card:hover .card_description {
-  opacity: 1;
-  transition-delay: 0.25s;
-}
-
-.card-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* services card styling ends*/
-
 .footer_links a {
   box-sizing: border-box;
   font-size: 15px;
@@ -447,10 +357,6 @@ ul.social-network li {
 
 /*  Medium devices (tablets, less than 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
-  .col-md-3 .card_content {
-    transform: translateY(250px);
-    padding: 13px;
-  }
 
   .nav_item_align {
     margin-right: 0;
@@ -460,9 +366,6 @@ ul.social-network li {
     text-align: center !important;
   }
 
-  .col-md-4 .card_content {
-    padding: 13px;
-  }
 }
 
 /*  */
@@ -682,310 +585,9 @@ ul.social-network li {
 
 /* ***************************************************************************** */
 
-/* Individual card styling section  */
 
-/*  card 1*/
 
-.card_content1 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 10px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-  /* transition: transform .25s; */
-}
 
-.card_content1::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content1 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content1 {
-    padding: 5px;
-  }
-}
-/*  card 2*/
-
-.card_content2 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 12px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-}
-
-.card_content2::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content2 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content2 {
-    padding: 5px;
-  }
-}
-/*  card 3*/
-
-.card_content3 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 12px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-}
-
-.card_content3::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content3 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content3 {
-    padding: 5px;
-  }
-}
-
-/*  card 4*/
-
-.card_content4 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 13px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-}
-
-.card_content4::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content4 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content4 {
-    padding: 5px;
-  }
-}
-/*  card 5*/
-
-.card_content5 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 11px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-}
-
-.card_content5::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content5 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content5 {
-    padding: 5px;
-  }
-}
-/*  card 6*/
-
-.card_content6 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 13px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-}
-
-.card_content6::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content6 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content6 {
-    padding: 13px;
-  }
-}
-/*  card 7*/
-
-.card_content7 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 5px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-}
-
-.card_content7::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content7 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content7 {
-    transform: translateY(0px);
-    padding: 5px;
-  }
-}
-/*  card 8*/
-
-.card_content8 {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  /* edit the width to fit card */
-  width: 100%;
-  padding: 5px;
-  background: #000000;
-  border-top-left-radius: 20px;
-  /* edit here to change the height of the content box */
-  transform: translateY(0px);
-}
-
-.card_content8::before {
-  content: "";
-  position: absolute;
-  top: -47px;
-  right: -45px;
-  width: 100px;
-  height: 100px;
-  transform: rotate(-175deg);
-  border-radius: 50%;
-  box-shadow: inset 48px 48px #000000;
-  z-index: -1000;
-}
-
-.card:hover .card_content8 {
-  transform: translateY(0);
-}
-
-@media (max-width: 768px) {
-  .col-md-3 .card_content8 {
-    transform: translateY(0px);
-    padding: 5px;
-  }
-}
-
-/* Individual card contetnt area ends  */
 
 /* sub home scction media queries  */
 @media (max-width: 768px) {
@@ -1029,3 +631,16 @@ ul.social-network li {
   color: red;
 }
 /*  New CSS file  */
+
+
+
+/* bootstrap card Styling  */
+
+.card_img {
+width: 42%;
+}
+
+.card_background {
+background-color: #000000;
+}
+/* bootstrap card Styling  */
