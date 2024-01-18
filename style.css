@@ -4,7 +4,7 @@ html {
 
 @font-face {
   font-family: "Sifonn"; /* Choose a name for your font */
-  src: url("/static/fonts/SIFONN_PRO.otf") format("opentype");
+  src: url("./static/fonts/SIFONN_PRO.otf") format("opentype");
 }
 
 body {
