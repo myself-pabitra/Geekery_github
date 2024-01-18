@@ -2,6 +2,10 @@ html {
     scroll-behavior:smooth;
 }
 
+@font-face {
+    font-family: 'Sifonn'; /* Choose a name for your font */
+    src: url('/static/fonts/SIFONN_PRO.otf') format('opentype');
+}
 
 body {
     /* Font Family */
@@ -59,6 +63,7 @@ body {
     word-spacing: 0px;
     text-transform: uppercase;
 }
+
 
 .services_area .sub_heading {
     font-size: 20px;
@@ -196,7 +201,7 @@ body {
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(150px);
+    /* transform: translateY(150px); */
     transition: transform .25s;
 }
 
@@ -215,9 +220,10 @@ body {
 }
 
 .card_title {
-    color: #131313;
+    color: #1aff88;
     line-height: 15px;
     font-size: 13px;
+    font-family: sifonn;
 }
 
 .card_subtitle {
@@ -228,8 +234,11 @@ body {
 
 .card_description {
     font-size: 14px;
-    opacity: 0;
-    transition: opacity .5s;
+    /* opacity: 0;
+    transition: opacity .5s; */
+    color: #1aff88;
+    font-family: Sifonn;
+
 }
 
 .card:hover .card_content {
@@ -254,7 +263,7 @@ body {
     font-size: 15px;
     line-height: 24.75px;
     font-weight: 600;
-    color: rgba(163, 157, 240, 1) !important;
+    color: #6fcbeb !important;
     text-decoration: none;
 }
 
@@ -308,7 +317,7 @@ ul.social-network li {
 	/* width: 50px;
 	height: 50px; */
 	font-size:20px;
-	background-color: rgb(129, 122, 224);
+	background-color: #6fcbeb;
 	/* background-color: #D3D3D3; */
 }
 .social-circle li i {
@@ -655,6 +664,8 @@ ul.social-network li {
 
   /* ***************************************************************************** */
 
+
+
 /* Individual card styling section  */
 
 /*  card 1*/
@@ -665,12 +676,12 @@ ul.social-network li {
     bottom: 0;
     /* edit the width to fit card */
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(25px);
-    transition: transform .25s;
+    transform: translateY(0px);
+    /* transition: transform .25s; */
 }
 
 .card_content1::before {
@@ -692,8 +703,8 @@ ul.social-network li {
 
 @media (max-width: 768px)  {
     .col-md-3 .card_content1 {
-        transform: translateY(34px);
-        padding: 13px;
+
+        padding: 5px;
 
     }
 }
@@ -705,12 +716,12 @@ ul.social-network li {
     bottom: 0;
     /* edit the width to fit card */
     width: 100%;
-    padding: 11px;
+    padding: 12px;
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(41px);
-    transition: transform .25s;
+    transform: translateY(0px);
+
 }
 
 .card_content2::before {
@@ -732,8 +743,8 @@ ul.social-network li {
 
 @media (max-width: 768px)  {
     .col-md-3 .card_content2 {
-        transform: translateY(40px);
-        padding: 13px;
+
+        padding: 5px;
 
     }
 }
@@ -745,12 +756,12 @@ ul.social-network li {
     bottom: 0;
     /* edit the width to fit card */
     width: 100%;
-    padding: 11px;
+    padding: 12px;
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(41px);
-    transition: transform .25s;
+    transform: translateY(0px);
+
 }
 
 .card_content3::before {
@@ -772,8 +783,8 @@ ul.social-network li {
 
 @media (max-width: 768px)  {
     .col-md-3 .card_content3 {
-        transform: translateY(40px);
-        padding: 13px;
+
+        padding: 5px;
 
     }
 }
@@ -786,12 +797,11 @@ ul.social-network li {
     bottom: 0;
     /* edit the width to fit card */
     width: 100%;
-    padding: 11px;
+    padding: 13px;
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(20px);
-    transition: transform .25s;
+    transform: translateY(0px);
 }
 
 .card_content4::before {
@@ -813,7 +823,7 @@ ul.social-network li {
 
 @media (max-width: 768px)  {
     .col-md-3 .card_content4 {
-        padding: 13px;
+        padding: 5px;
 
     }
 }
@@ -829,8 +839,8 @@ ul.social-network li {
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(12px);
-    transition: transform .25s;
+    transform: translateY(0px);
+
 }
 
 .card_content5::before {
@@ -852,7 +862,7 @@ ul.social-network li {
 
 @media (max-width: 768px)  {
     .col-md-3 .card_content5 {
-        padding: 13px;
+        padding: 5px;
 
     }
 }
@@ -864,12 +874,12 @@ ul.social-network li {
     bottom: 0;
     /* edit the width to fit card */
     width: 100%;
-    padding: 11px;
+    padding: 13px;
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(18px);
-    transition: transform .25s;
+    transform: translateY(0px);
+
 }
 
 .card_content6::before {
@@ -903,12 +913,12 @@ ul.social-network li {
     bottom: 0;
     /* edit the width to fit card */
     width: 100%;
-    padding: 11px;
+    padding: 5px;
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(35px);
-    transition: transform .25s;
+    transform: translateY(0px);
+
 }
 
 .card_content7::before {
@@ -930,8 +940,8 @@ ul.social-network li {
 
 @media (max-width: 768px)  {
     .col-md-3 .card_content7 {
-    transform: translateY(48px);
-        padding: 13px;
+    transform: translateY(0px);
+        padding: 5px;
 
     }
 }
@@ -943,12 +953,12 @@ ul.social-network li {
     bottom: 0;
     /* edit the width to fit card */
     width: 100%;
-    padding: 11px;
+    padding: 5px;
     background: #f2f2f2;
     border-top-left-radius: 20px;
     /* edit here to change the height of the content box */
-    transform: translateY(50px);
-    transition: transform .25s;
+    transform: translateY(0px);
+
 }
 
 .card_content8::before {
@@ -970,13 +980,13 @@ ul.social-network li {
 
 @media (max-width: 768px)  {
     .col-md-3 .card_content8 {
-    transform: translateY(79px);
-        padding: 13px;
+    transform: translateY(0px);
+        padding: 5px;
 
     }
 }
 
-/* Individual card styling section  */
+/* Individual card contetnt area ends  */
 
 /* sub home scction media queries  */
 @media (max-width: 768px) {
