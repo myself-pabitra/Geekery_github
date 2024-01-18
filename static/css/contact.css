@@ -8,6 +8,7 @@ body{
     text-align: center;
     font-size: 26px;
     margin-top: 4rem;
+    text-transform: uppercase;
 }
 .contact_heading_container{
     width: 1050px;
@@ -57,10 +58,24 @@ body{
     outline: none;
 }
 
+.form_label{
+    color: white;
+    margin: 7px;
+}
+
 .contact-img-container img{
     width: 470px;
 }
 
+.parent_contact{
+    position: relative;
+}
+.contct_button{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
 @media(max-width:767px){
     .contact_heading{
         font-size: 25px;
@@ -73,6 +88,9 @@ body{
     }
     .row{
         margin: auto;
+    }
+    .contct_button{
+        left: 50%;
     }
 }
 
