@@ -643,4 +643,12 @@ width: 42%;
 .card_background {
 background-color: #000000;
 }
+  .card:hover .card-body {
+    background-color: green;
+  }
+
+  .card:hover .card-img-top {
+    transform: rotateY(360deg);
+    transition: transform 1s; /* Add a smooth transition effect */
+  }
 /* bootstrap card Styling  */
