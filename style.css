@@ -837,3 +837,57 @@ ul.social-network li {
     }
     
   /* Lets connect button  */
+
+
+  /* Send MEssage Button  */
+  .contact_annimated_button {
+    width: 180px;
+    height: 63px;
+    position: relative;
+    font-size: 20px;
+    letter-spacing: 1.12px;
+    color: #fcfcfc;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid white !important;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    transition: all ease 100ms;
+    cursor: pointer;
+  }
+  
+  .contact_annimated_button:hover {
+    background-color: #2eec03;
+      color: #000000;
+  }
+  
+  button:focus {
+    background-color: #000000;
+  }
+  
+  .contact_annimated_button::before {
+    content: '🙂Success!';
+    position: absolute;
+    color: #ffffff;
+    left: 0;
+    top: -14px;
+    right: 0;
+    transition: all ease 300ms;
+    opacity: 0%;
+  }
+  
+  .contact_annimated_button:focus::before {
+    opacity: 100%;
+    transform: translateY(26px);
+  }
+  
+  .submit {
+    transition: all ease 100ms;
+    opacity: 100%;
+  }
+  
+  .contact_annimated_button:focus > .submit {
+    opacity: 0%;
+  }
+  /* Send MEssage Button  */

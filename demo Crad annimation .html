@@ -160,47 +160,58 @@ body{
 
 
 
-.connect_btn {
-cursor: pointer;
- height: 60px;
- width: 160px;
- border: 1px solid #ffffff;
- position: relative;
- overflow: hidden;
- background-color: transparent;
- text-align: center;
- font-size: 15px;
- font-weight: bold;
- transition: .3s;
- z-index: 1;
- font-family: inherit;
- color: #ffffff;
- border-radius: 5px;
- outline: none;
+.contact_annimated_button {
+  width: 180px;
+  height: 63px;
+  position: relative;
+  font-size: 20px;
+  letter-spacing: 1.12px;
+  color: #fcfcfc;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid white;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  transition: all ease 100ms;
+  cursor: pointer;
 }
 
-.connect_btn::after {
- content: '';
- height: 0;
- width: 300%;
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translateX(-50%) translateY(-50%);
- background: #22ec44;
- transition: .25s ease;
- display: block;
- z-index: -1;
+.contact_annimated_button:hover {
+  background-color: #2eec03; 
+    color: #000000;
 }
 
-.connect_btn:hover::after {
-
- height: 80%;
+button:focus {
+  background-color: #000000;
 }
 
-.connect_btn:hover {
- color: #000000;
+.contact_annimated_button::before {
+  content: '🙂Success!';
+  position: absolute;
+  color: #ffffff;
+  left: 0;
+  top: -14px;
+  right: 0;
+  transition: all ease 300ms;
+  opacity: 0%;
 }
+
+.contact_annimated_button:focus::before {
+  opacity: 100%;
+  transform: translateY(26px);
+}
+
+.submit {
+  transition: all ease 100ms;
+  opacity: 100%;
+}
+
+.contact_annimated_button:focus > .submit {
+  opacity: 0%;
+}
+
+
 
 </style>
 
@@ -272,8 +283,10 @@ cursor: pointer;
         </div>
     </div> -->
 
-    <button class="connect_btn"> Let's Connect!
-    </button>
+    <button class="contact_annimated_button">
+        <p class="submit">Lets Talk!</p>
+        
+        </button>
 
 </body>
 
