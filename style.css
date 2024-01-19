@@ -642,7 +642,7 @@ ul.social-network li {
 
 .text-overlay {
   position: absolute;
-  top: 85%;
+  top: 84.6%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -791,3 +791,49 @@ ul.social-network li {
     
   
   /* bootstrap card Styling  */
+
+  /* Lets connect button  */
+
+  .connect_btn {
+    cursor: pointer;
+     height: 60px;
+     width: 180px;
+     border: 1px solid #ffffff !important;
+     position: relative;
+     overflow: hidden;
+     background-color: transparent;
+     text-align: center;
+     font-size: 15px;
+     font-weight: bold;
+     transition: .3s;
+     z-index: 1;
+     font-family: inherit;
+     color: #ffffff;
+     border-radius: 5px;
+     outline: none;
+    }
+    
+    .connect_btn::after {
+     content: '';
+     height: 0;
+     width: 300%;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translateX(-50%) translateY(-50%);
+     background: #22ec44;
+     transition: .25s ease;
+     display: block;
+     z-index: -1;
+    }
+    
+    .connect_btn:hover::after {
+    
+     height: 80%;
+    }
+    
+    .connect_btn:hover {
+     color: #000000;
+    }
+    
+  /* Lets connect button  */
