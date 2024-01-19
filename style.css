@@ -770,7 +770,7 @@ ul.social-network li {
       border-radius: 5px;
   } */
   .card:hover {
-      background-color: green;
+      background-color: #0a6637;
       border-radius: 5px;
   }
   
@@ -821,7 +821,7 @@ ul.social-network li {
      top: 50%;
      left: 50%;
      transform: translateX(-50%) translateY(-50%);
-     background: #22ec44;
+     background: #1aff88;
      transition: .25s ease;
      display: block;
      z-index: -1;
@@ -840,6 +840,7 @@ ul.social-network li {
 
 
   /* Send MEssage Button  */
+
   .contact_annimated_button {
     width: 180px;
     height: 63px;
@@ -858,22 +859,22 @@ ul.social-network li {
   }
   
   .contact_annimated_button:hover {
-    background-color: #2eec03;
+    background-color: #1aff88;
       color: #000000;
   }
   
   button:focus {
-    background-color: #000000;
+    background-color: #1aff88;
   }
   
   .contact_annimated_button::before {
     content: '🙂Success!';
     position: absolute;
-    color: #ffffff;
+    color: #000000;
     left: 0;
     top: -14px;
     right: 0;
-    transition: all ease 300ms;
+    transition: all ease 0.25s;
     opacity: 0%;
   }
   
@@ -890,4 +891,7 @@ ul.social-network li {
   .contact_annimated_button:focus > .submit {
     opacity: 0%;
   }
+
+
+
   /* Send MEssage Button  */
