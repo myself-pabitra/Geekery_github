@@ -14,3 +14,24 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
+
+
+
+  var screenWidth = window.innerWidth;
+
+  // Adjust the threshold as needed (967 pixels in this case)
+  if (screenWidth < 967) {
+    document.querySelector('#callout_large_screen').classList.add('hidden')
+    document.querySelector('#callout_small_screen').classList.remove('hidden')
+  } else {
+    document.querySelector('.my-component').style.display = 'none';
+  }
+
+
+// Initial check on page load
+toggleComponentVisibility();
+
+// Attach the function to the resize event to update visibility on window resize
+window.addEventListener('resize', toggleComponentVisibility);

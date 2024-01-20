@@ -101,7 +101,7 @@
           <div class="sub_heading_about">
             <h2>What's with the 'Geekery'?</h2>
           </div>
-          <div class="about_para1 mt-5">
+          <!-- <div class="about_para1 mt-5">
             Creativity is our hallmark but producing a super-creative, super-intriguing video takes a lot of
             collaborative effort and is a complete team play.
           </div>
@@ -109,16 +109,17 @@
             So we, at You Media believe to have a symbiotic relationship with our clients so they know
             exactly how their project is being treated and at what stage it is at all times with our Live
             Dashboards.
-          </div>
+          </div> -->
           <div class="row mt-5">
-            <div class="col-md-4">
+            <div class="col-md-3">
               <div class="callout_container">
                 <img src="./static/images/callout.png" alt="" width="250px">
                 <p class="callout-text">Why?</p>
 
               </div>
             </div>
-            <div class="col-md-7">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
               <p class="callout_para1 mt-5">Because boring is the enemy of virality. We want your viewers to
                 do a spit-take of excitement, not reach for the snooze button. We're talking laugh-out-loud
                 concepts, eye-popping visuals, and storytelling that sticks like digital bubblegum. </p>
@@ -126,11 +127,10 @@
                 scale.'
               </p>
             </div>
-            <div class="col-md-1"></div>
+
           </div>
-          <div class="row">
-            <div class="col-md-1"></div>
-            <div class="col-md-7">
+          <div class="row" id="callout_large_screen">
+            <div class="col-md-8">
               <p class="callout_para2 mt-5">We dissect your brand like a CSI team, unearthing its unique DNA. Then, we
                 tailor video
                 plans that speak your audience's language, not marketing jargon. Every pitch is a bespoke
@@ -140,12 +140,34 @@
               </p>
 
             </div>
-            <div class="col-md-4">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
               <div class="callout_container">
                 <img src="./static/images/callout.png" alt="" width="250px">
                 <p class="callout-text">How?</p>
               </div>
             </div>
+
+          </div>
+          <div class="row hidden" id="callout_small_screen">
+            <div class="col-md-3">
+              <div class="callout_container">
+                <img src="./static/images/callout.png" alt="" width="250px">
+                <p class="callout-text">How?</p>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+              <p class="callout_para2 mt-5">We dissect your brand like a CSI team, unearthing its unique DNA. Then, we
+                tailor video
+                plans that speak your audience's language, not marketing jargon. Every pitch is a bespoke
+                masterpiece, a symphony of data, creativity, and pure, unadulterated Geekery magic.</p>
+              <p class="sub_text">' So, if you're tired of videos that fizzle faster than a wet firecracker, let's geek
+                out.'
+              </p>
+
+            </div>
+
 
           </div>
         </div>
@@ -159,7 +181,7 @@
         <div class="row">
           <div class="heading sub_heading_about mt-5 mb-5">'Geekery' Services Suite</div>
 
-          
+
           <div class="col-md-3 d-flex justify-content-center align-items-center mt-3">
             <div class="card card_background" style="width: 15rem;">
               <div class="circle"></div>
@@ -224,7 +246,7 @@
               <div class="card-body">
                 <h5 class="card-title text-light">Internal Communication</h5>
                 <p class="card-text text-light">'Hush-hush news to team cheers! Connect, train, or boost spirits- all
-                    inside.'</p>
+                  inside.'</p>
               </div>
             </div>
           </div>
@@ -234,7 +256,7 @@
               <div class="card-body">
                 <h5 class="card-title text-light">Promotional & Brand Videos</h5>
                 <p class="card-text text-light">'Promotional videos will shout "Buy It Now!", while brand videos will
-                    whisper "Love Me Forever.'</p>
+                  whisper "Love Me Forever.'</p>
               </div>
             </div>
           </div>
@@ -285,20 +307,18 @@
                   <div class="form-group col-md-8 col-12 mb-3">
                     <label for="Name*" class="form_label">Name <span class="imp">*</span></label>
                     <div class="row">
-                      <div class="col-md-6 col-12">
+                      <div class="col-md-6 col-12 sm_p0">
                         <input class="form-control" id="inputEmail4">
                         <label for="">First</label>
 
                       </div>
-                      <div class="col-md-6 col-12">
+                      <div class="col-md-6 col-12 sm_p0">
                         <input class="form-control" id="inputPassword4">
                         <label for="">Last</label>
 
                       </div>
                     </div>
 
-                  </div>
-                  <div class="form-group col-md-8 col-12 mb-4">
                   </div>
                   <div class="form-group col-md-8 col-12 mb-4">
                     <label for="Name*" class="form_label">Email <span class="imp">*</span></label>
@@ -324,7 +344,7 @@
               <!-- <button class="talk_button">Lets Talk!</button> -->
               <button class="contact_annimated_button">
                 <p class="submit mb-0">Lets Talk!</p>
-                </button>
+              </button>
             </div>
           </div>
           <div class="col-md-1"></div>
@@ -332,7 +352,7 @@
 
       </div>
       <div class="contact_heading sub_text">
-        P.S. WE ALSO MAKE A MEAN CUP OF COFFEE. JUST SAYIN' .
+        P.S. WE ALSO MAKE A MEAN CUP OF COFFEE. JUST SAYIN'.
       </div>
     </div>
     <!-- Contact us section ends here -->
@@ -385,6 +405,12 @@
 
           <div class="col-sm-6 col-6 col mb-3 d-flex justify-content-center align-items-center">
             <ul class="nav flex-column">
+             
+            </ul>
+          </div>
+
+          <div class="col-sm-6 col-12 col mb-3 d-flex justify-content-center align-items-center">
+            <ul class="nav flex-column text_align">
               <li class="nav-item mb-2 footer_links">
                 <a href="#home" class="nav-link p-0">Home</a>
               </li>
@@ -395,12 +421,6 @@
                 <a href="#about_us" class="nav-link p-0">About Us</a>
               </li>
 
-            </ul>
-          </div>
-
-          <div class="col-sm-6 col-6 col mb-3 d-flex justify-content-center align-items-center">
-            <ul class="nav flex-column">
-
               <li class="nav-item mb-2 footer_links">
                 <a href="#contact" class="nav-link p-0">Contact us</a>
               </li>
@@ -408,9 +428,11 @@
                 <a href="#" class="nav-link p-0">Get a Quote</a>
               </li>
 
+
             </ul>
           </div>
         </footer>
+        <div class="container text-center mb-3">&#x24B8; Made with ❤️ by <a target="_blank" class="copyright" href="https://codesnap.in">CodeSnap</a></div>
       </div>
     </div>
 

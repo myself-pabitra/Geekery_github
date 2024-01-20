@@ -503,7 +503,7 @@ ul.social-network li {
 
 .callout_container {
   position: relative;
-  text-align: center;
+  /* text-align: sta; */
 }
 
 .callout-text {
@@ -604,13 +604,20 @@ ul.social-network li {
   .talk_button_home {
     margin-top: 15px;
   }
-}
+  .text_align{
+    align-items: center !important;
+  }
+    .sm_p0{
+      padding: 0;
+    }
+  }
+
 /* sub home scction media queries  */
 
 /*  New CSS file  */
 .text-overlay {
   position: absolute;
-  top: 93%;
+  top: 89%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -703,7 +710,7 @@ ul.social-network li {
 @media screen and (min-width: 911px) and (max-width: 1024px) {
   .text-overlay {
     position: absolute;
-    top: 86.5%;
+    top: 84.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -744,6 +751,12 @@ ul.social-network li {
 
 }
 }
+
+.copyright{
+  text-decoration: none;
+  color: #00ff67;
+}
+
 
 .sub_text {
   color: #1aff88 !important;
@@ -890,6 +903,12 @@ ul.social-network li {
   
   .contact_annimated_button:focus > .submit {
     opacity: 0%;
+  }
+  .text_align{
+    align-items: right !important;
+  }
+  .hidden{
+    display: none;
   }
 
 
